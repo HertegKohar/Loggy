@@ -1,0 +1,11 @@
+DEBUG 2021-09-17 18:09:19,721 - Dispatching event socket_raw_receive
+DEBUG 2021-09-17 18:09:19,722 - Dispatching event socket_response
+DEBUG 2021-09-17 18:09:19,722 - Dispatching event message
+DEBUG 2021-09-17 18:09:19,739 - Dispatching event command_completion
+DEBUG 2021-09-17 18:09:19,832 - Dispatching event socket_raw_receive
+DEBUG 2021-09-17 18:09:19,832 - Dispatching event socket_response
+DEBUG 2021-09-17 18:09:19,833 - Dispatching event typing
+DEBUG 2021-09-17 18:09:28,078 - Dispatching event socket_raw_receive
+DEBUG 2021-09-17 18:09:28,078 - Dispatching event socket_response
+DEBUG 2021-09-17 18:09:28,079 - Dispatching event typing
+DEBUG 2021-09-17 18:09:36,562 - Dispatching event socket_raw_receive

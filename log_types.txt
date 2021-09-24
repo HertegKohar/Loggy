@@ -1,0 +1,8 @@
+Dispatch event 
+POST
+WebSocket event
+HTTP connection
+websocket alive
+
+
+More can be added, these are just the first ones i came up with - Brandon
