@@ -8,7 +8,7 @@ import json
 Overall Description:
   These classes are to be used once the proper log has been found and can be associated with the correct sub class, all unclassifiable logs can be created with the base class
 Author:
-  Brandon Parker
+  Brandon Parker - park3730
 """
 
 # Base class ice cream juice 
