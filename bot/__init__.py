@@ -4,11 +4,11 @@ import yfinance as yf
 import requests
 from datetime import datetime
 import logging
+import discord
 from logger import logger, streamer
 from threading import Thread
-
+from zipfile import ZipFile
 bot = Bot('$',streamer)
-
 
 @bot.event
 async def on_ready():
@@ -35,6 +35,15 @@ async def disable_log(ctx):
   logging.disable(logging.CRITICAL)
   await ctx.send(f"Logging disabled {datetime.now()}")
   
+@bot.command(name="file")
+async def log_files(ctx):
+  with ZipFile("formatted_logs.zip", "w") as zip:
+            folder_path = "formatted_logs"
+            for _, _, files in os.walk(folder_path):
+                for filename in files:
+                    zip.write("formatted_logs/"+filename)
+            zip.close()
+  await ctx.send(file=discord.File("formatted_logs.zip"))
 
 
 def get_weather():

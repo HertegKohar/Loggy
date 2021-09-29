@@ -16,8 +16,7 @@ class base_log_format:
 
   """
   Description:
-    Used to create log objects from unclassified logs. Overall formatting done in this class is basic 
-    since the logs overall format is unknow and not implemented.
+    Used to create log objects from unclassified logs. Overall formatting done in this class is basic since the logs overall format is unknown and not implemented.
 
   Log type Example(s):
     DEBUG 2021-09-17 18:15:42,567 - http://api.openweathermap.org:80 "GET /data/2.5/weather?q=Waterloo .....  
