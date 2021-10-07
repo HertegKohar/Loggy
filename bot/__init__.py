@@ -14,11 +14,18 @@ bot = Bot('$', streamer)
 
 @bot.event
 async def on_ready():
+    """Description: Event for bot when being initialized and starting up. Prints its name to the
+    consolse.
+    """
     print(f"Booting up: {bot.user}")
 
 
 @bot.command(name="printLog")
 async def print_log(ctx):
+    """Description: Command to print logs into console on virtual machine. Called from discord when bot is active.
+    Args:
+        ctx (Context): Context in which the command is being invoked
+    """
     for log in bot.log_stream.logs:
         print(log)
     await ctx.send(f"Log printed in console {datetime.now()}")
@@ -26,36 +33,56 @@ async def print_log(ctx):
 
 @bot.command(name="hello")
 async def greeting(ctx):
-    await ctx.send(f'Hello {ctx.author.display_name}')
+  """Description: Command to reply to user and reply in discord chat with greeting.
+  Args:
+        ctx (Context): Context in which the command is being invoked
+  """
+  await ctx.send(f'Hello {ctx.author.display_name}')
 
 
 @bot.command(name="enableLog")
 async def enable_log(ctx):
-    logging.disable(logging.NOTSET)
-    await ctx.send(f"Logging enabled {datetime.now()}")
+  """Description: Command to enable logging from bot on virtual machine and store logs in a file.
+  Args:
+        ctx (Context): Context in which the command is being invoked
+    """
+  logging.disable(logging.NOTSET)
+  await ctx.send(f"Logging enabled {datetime.now()}")
 
 
 @bot.command(name="disableLog")
 async def disable_log(ctx):
-    bot.log_stream.refresh()
-    logging.disable(logging.CRITICAL)
-    await ctx.send(f"Logging disabled {datetime.now()}")
+  """Description: Command called from discord, flushes bot log stream and disables logging.
+  Args:
+        ctx (Context): Context in which the command is being invoked
+    """
+  bot.log_stream.refresh()
+  logging.disable(logging.CRITICAL)
+  await ctx.send(f"Logging disabled {datetime.now()}")
 
 
 @bot.command(name="file")
 async def log_files(ctx):
-    with ZipFile("formatted_logs.zip", "w") as zip:
-        folder_path = "formatted_logs"
-        for _, _, files in os.walk(folder_path):
-            for filename in files:
-                zip.write("formatted_logs/" + filename)
-        zip.close()
-    await ctx.send(file=discord.File("formatted_logs.zip"))
+  """Description: Command to send formatted log files to discord chat in a zip file format.
+  Args:
+        ctx (Context): Context in which the command is being invoked
+    """
+  with ZipFile("formatted_logs.zip", "w") as zip:
+      folder_path = "formatted_logs"
+      for _, _, files in os.walk(folder_path):
+          for filename in files:
+              zip.write("formatted_logs/" + filename)
+      zip.close()
+  await ctx.send(file=discord.File("formatted_logs.zip"))
 
 
 @bot.command(name="smile")
 async def smile(ctx):
-    await ctx.send(file=discord.File("LoggySmile.png"))
+  """Description: Command that is called that returns the image of the bot to the discord chat
+  Args:
+        ctx (Context): Context in which the command is being invoked
+    """
+  await ctx.send(file=discord.File("LoggySmile.png"))
 
 
 def get_weather():
@@ -101,19 +128,30 @@ def get_weather():
 
 @bot.command(name='weather')
 async def on_message(ctx):
+    """Description: Returns the weather for Waterloo to the discord chat
+
+    Args:
+        ctx (Context): Context in which the command is being invoked
+    """
     await ctx.send(get_weather())
 
 
 @bot.command(name="stock")
 async def stocks(ctx, stock_ticker):
-    stock_ticker = stock_ticker.upper()
-    try:
-        ticker = yf.Ticker(stock_ticker)
-        data = ticker.history()
-        last_quote = (data.tail(1)['Close'].iloc[0])
-        await ctx.send(
-            f"{stock_ticker}: {last_quote} {ticker.info['currency']}")
-    except Exception as err:
-        logger.error(str(err))
-        await ctx.send(
-            f"Ticker {stock_ticker} unavailable or functionality not working")
+  """Description: Finds the up to date valuation of a stock from its ticker using the yahoo finance API.
+    
+    Args:
+        ctx (Context): Context in which the command is being invoked
+        stock_ticker (str): The stock_ticker to find the value of 
+    """
+  stock_ticker = stock_ticker.upper()
+  try:
+      ticker = yf.Ticker(stock_ticker)
+      data = ticker.history()
+      last_quote = (data.tail(1)['Close'].iloc[0])
+      await ctx.send(
+          f"{stock_ticker}: {last_quote} {ticker.info['currency']}")
+  except Exception as err:
+      logger.error(str(err))
+      await ctx.send(
+          f"Ticker {stock_ticker} unavailable or functionality not working")
