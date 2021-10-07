@@ -10,6 +10,7 @@ discord = "^1.7.3"
 Flask = "^2.0.1"
 bs4 = "^0.0.1"
 yfinance = "^0.1.60"
+pdoc3 = "^0.10.0"
 
 [tool.poetry.dev-dependencies]
 
