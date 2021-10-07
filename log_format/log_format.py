@@ -10,7 +10,7 @@ Author:
 """
 
 # Base class ice cream juice
-class base_log_format:
+class Base_log_format:
   """
   Description:
     Used to create log objects from unclassified logs. Overall formatting done in this class is basic since the logs overall format is unknown and not implemented.
@@ -31,7 +31,7 @@ class base_log_format:
     self.__format_msg()
     # creates the file names based on their class name except
     # for the base class
-    if self.__class__.__name__ != "base_log_format":
+    if self.__class__.__name__ != "Base_log_format":
       self.file_name = "formatted_" + self.__class__.__name__ + ".txt"
       self.csv_file_name = "csv_" + self.__class__.__name__ + ".csv"
 
@@ -97,10 +97,10 @@ class base_log_format:
 
 
 # Dispatch Event Subclass
-class dispatch_event_log(base_log_format):
+class dispatch_event_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from disbatch events logs
+    Subclass of Base_log_format used to create log objects from disbatch events logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:09:19,721 - Dispatching event socket_raw_receive
@@ -133,10 +133,10 @@ class dispatch_event_log(base_log_format):
 
 
 # Websocket Event subclass
-class websocket_event_log(base_log_format):
+class websocket_event_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from websocket events logs
+    Subclass of Base_log_format used to create log objects from websocket events logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:16:31,681 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
@@ -207,10 +207,10 @@ class websocket_event_log(base_log_format):
 
 
 # POST subclass
-class POST_log(base_log_format):
+class POST_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from POST logs
+    Subclass of Base_log_format used to create log objects from POST logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:10:50,049 - POST https://discord.com/api/v7/channels/887370975526653962/messages with {"content":"Current temp: 25.7\u00b0C\n .....
@@ -276,10 +276,10 @@ class POST_log(base_log_format):
 
 
 # Starting new HTTP connection subclass
-class HTTP_connection_log(base_log_format):
+class HTTP_connection_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from HTTP Connection logs
+    Subclass of Base_log_format used to create log objects from HTTP Connection logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:15:42,142 - Starting new HTTP connection (1): api.openweathermap.org:80
@@ -316,10 +316,10 @@ class HTTP_connection_log(base_log_format):
 
 
 # Keeping shard ID None websocket alive subclass
-class websocket_alive_log(base_log_format):
+class websocket_alive_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from websocket alive logs
+    Subclass of Base_log_format used to create log objects from websocket alive logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:10:20,378 - Keeping shard ID None websocket alive with sequence 34.
