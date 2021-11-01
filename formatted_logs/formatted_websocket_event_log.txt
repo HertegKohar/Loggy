@@ -1,7 +1,6 @@
-Type: DEBUG | Timestamp: 2021-11-01 18:13:23 | Code: 309 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Finished
-Type: DEBUG | Timestamp: 2021-11-01 18:13:58 | Code: 657 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-01 18:14:39 | Code: 908 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-01 18:15:21 | Code: 160 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-01 18:15:35 | Code: 451 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-01 18:15:36 | Code: 771 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $produce_consume
-Type: DEBUG | Timestamp: 2021-11-01 18:15:36 | Code: 924 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...
+Type: DEBUG | Timestamp: 2021-11-01 19:42:08 | Code: 008 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Logging enabled 2021-11-01 19:42:07.906402
+Type: DEBUG | Timestamp: 2021-11-01 19:42:10 | Code: 754 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: $file
+Type: DEBUG | Timestamp: 2021-11-01 19:42:10 | Code: 894 | Event Type: MESSAGE_CREATE | Author: Loggy Message: 
+Type: DEBUG | Timestamp: 2021-11-01 19:42:16 | Code: 464 | Event Type: TYPING_START | Author: Parker🍁
+Type: DEBUG | Timestamp: 2021-11-01 19:42:19 | Code: 146 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: $produce_consume
+Type: DEBUG | Timestamp: 2021-11-01 19:42:19 | Code: 335 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...

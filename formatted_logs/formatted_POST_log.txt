@@ -1,4 +1,6 @@
-Type: DEBUG | Timestamp: 2021-11-01 18:13:23 | Code: 334 | Message: Finished | Notes: has returned 200
-Type: DEBUG | Timestamp: 2021-11-01 18:13:23 | Code: 334 | Author: Loggy Message: Finished | Channel ID: 887370975526653962
-Type: DEBUG | Timestamp: 2021-11-01 18:15:36 | Code: 936 | Message: Producing and consuming has started... | Notes: has returned 200
-Type: DEBUG | Timestamp: 2021-11-01 18:15:36 | Code: 937 | Author: Loggy Message: Producing and consuming has started... | Channel ID: 887370975526653962
+Type: DEBUG | Timestamp: 2021-11-01 19:42:08 | Code: 024 | Message: Logging enabled 2021-11-01 19:42:07.906402 | Notes: has returned 200
+Type: DEBUG | Timestamp: 2021-11-01 19:42:08 | Code: 024 | Author: Loggy Message: Logging enabled 2021-11-01 19:42:07.906402 | Channel ID: 887370975526653962
+Type: DEBUG | Timestamp: 2021-11-01 19:42:10 | Code: 912 | Notes: POST https://discord.com/api/v7/channels/887370975526653962/messages with <aiohttp.formdata.FormData object at 0x7f9fa64af430> has returned 200
+Type: DEBUG | Timestamp: 2021-11-01 19:42:10 | Code: 912 | Author: Loggy Message:  | Channel ID: 887370975526653962
+Type: DEBUG | Timestamp: 2021-11-01 19:42:19 | Code: 380 | Message: Producing and consuming has started... | Notes: has returned 200
+Type: DEBUG | Timestamp: 2021-11-01 19:42:19 | Code: 380 | Author: Loggy Message: Producing and consuming has started... | Channel ID: 887370975526653962
