@@ -1,5 +1,13 @@
 {
   "files": {
+    "logging.txt": [
+      {
+        "id": "5676682f-30fd-4fed-ab23-e0d87cf861c3",
+        "line": 1,
+        "version": 394,
+        "index": 0
+      }
+    ],
     "permanant_log_file.txt": [
       {
         "id": "c0a6cede-8a69-49ff-970e-e1a2497cf8c6",

@@ -1,1 +1,5 @@
-Type: DEBUG | Timestamp: 2021-09-17 18:10:49 | Code: 918 | Notes: http://api.openweathermap.org:80 "GET /data/2.5/weather?q=Waterloo&units=metric&appid=5ce738ffc2a2d3d25a5322eeb4e68d3d HTTP/1.1" 200 459
+Type: INFO | Timestamp: 2021-11-01 18:15:29 | Code: 949 | Notes: 172.18.0.1 - - [01/Nov/2021 18:15:29] "GET / HTTP/1.1" 200 -
+Type: INFO | Timestamp: 2021-11-01 18:15:30 | Code: 020 | Notes: 172.18.0.1 - - [01/Nov/2021 18:15:30] "[36mGET /__autoindex__/asc.gif HTTP/1.1[0m" 304 -
+Type: INFO | Timestamp: 2021-11-01 18:15:30 | Code: 023 | Notes: 172.18.0.1 - - [01/Nov/2021 18:15:30] "[36mGET /__autoindex__/autoindex.css HTTP/1.1[0m" 304 -
+Type: INFO | Timestamp: 2021-11-01 18:15:30 | Code: 046 | Notes: 172.18.0.1 - - [01/Nov/2021 18:15:30] "[36mGET /__icons__/folder.png HTTP/1.1[0m" 304 -
+Type: INFO | Timestamp: 2021-11-01 18:15:30 | Code: 049 | Notes: 172.18.0.1 - - [01/Nov/2021 18:15:30] "[36mGET /__icons__/page_white_code.png HTTP/1.1[0m" 304 -

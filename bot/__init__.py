@@ -5,14 +5,15 @@ import requests
 from datetime import datetime
 import logging
 import discord
-from logger import logger, streamer
+from logger.logger import initialize_logging
 from threading import Thread
 from zipfile import ZipFile
 from producer import produce_logs
 from consumer import consume_logs
 from queue import Queue
 
-bot = Bot('$', streamer)
+LOGGER = initialize_logging()
+bot = Bot('$')
 
 
 @bot.event
@@ -60,7 +61,6 @@ async def disable_log(ctx):
   Args:
       ctx (Context): Context in which the command is being invoked
     """
-  bot.log_stream.refresh()
   logging.disable(logging.CRITICAL)
   await ctx.send(f"Logging disabled {datetime.now()}")
 
@@ -156,7 +156,7 @@ async def stocks(ctx, stock_ticker):
       await ctx.send(
           f"{stock_ticker}: {last_quote} {ticker.info['currency']}")
   except Exception as err:
-      logger.error(str(err))
+      LOGGER.error(str(err))
       await ctx.send(
           f"Ticker {stock_ticker} unavailable or functionality not working")
 
@@ -164,8 +164,18 @@ async def stocks(ctx, stock_ticker):
 
 @bot.command(name="produce_consume")
 async def produce_consume(ctx):
+  """Description: Starts the producer-consumer architecture with the logs
+
+    Args:
+        ctx (Context): Context in which the command is being invoked
+    """
 
   await ctx.send("Producing and consuming has started...")
+  #Clearing old formatted log files
+  for file in os.listdir("formatted_logs"):
+    open("formatted_logs/"+file,'w').close()
+    
+  logging.disable(logging.CRITICAL)
   work = Queue()
   finished = Queue()
 
@@ -179,7 +189,25 @@ async def produce_consume(ctx):
   #start each thread
   produce.start()
   consume.start()
+  
+  produce.join()
+  consume.join()
+  # clears logging.txt file contents
+  global LOGGER
+  LOGGER.handlers[0].close()
+  LOGGER =initialize_logging()
+  
+  # open('logging.txt','w').close()
+  print("Log file cleared")
 
+  logging.disable(logging.NOTSET)
+ 
+
+  # rows = []
+  # with open('logging.txt', "r") as f:
+  #       rows = f.readlines()[1:]
+  # with open('logging.txt','w') as f:
+  #       f.writelines(rows)
   await ctx.send("Finished")
 
   
