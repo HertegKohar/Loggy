@@ -114,3 +114,115 @@ DEBUG 2021-11-01 18:23:36,136 - Keeping shard ID None websocket alive with seque
 DEBUG 2021-11-01 18:23:36,178 - Dispatching event socket_raw_receive
 DEBUG 2021-11-01 18:23:36,178 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
 DEBUG 2021-11-01 18:23:36,179 - Dispatching event socket_response
+DEBUG 2021-11-01 18:24:17,388 - Keeping shard ID None websocket alive with sequence 32.
+DEBUG 2021-11-01 18:24:17,428 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:24:17,428 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:24:17,428 - Dispatching event socket_response
+DEBUG 2021-11-01 18:24:58,639 - Keeping shard ID None websocket alive with sequence 32.
+DEBUG 2021-11-01 18:24:58,681 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:24:58,681 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:24:58,681 - Dispatching event socket_response
+DEBUG 2021-11-01 18:25:39,891 - Keeping shard ID None websocket alive with sequence 32.
+DEBUG 2021-11-01 18:25:39,930 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:25:39,931 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:25:39,931 - Dispatching event socket_response
+DEBUG 2021-11-01 18:26:14,567 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:26:14,567 - For Shard ID None: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 33, 'op': 0, 'd': {'member': {'user': {'username': 'Parker🍁', 'id': '699717227250712648', 'discriminator': '1904', 'avatar': '3767e5793a9e29f09286526e9560e2db'}, 'roles': [], 'mute': False, 'joined_at': '2021-09-14T15:32:57.845000+00:00', 'hoisted_role': None, 'deaf': False}, 'user_id': '699717227250712648', 'suppress': False, 'session_id': '156f39d1e3dfb68fa2a86736f983248a', 'self_video': False, 'self_stream': True, 'self_mute': False, 'self_deaf': False, 'request_to_speak_timestamp': None, 'mute': False, 'guild_id': '887360283071373322', 'deaf': False, 'channel_id': '887360283071373326'}}
+DEBUG 2021-11-01 18:26:14,567 - Dispatching event socket_response
+DEBUG 2021-11-01 18:26:14,567 - Dispatching event voice_state_update
+DEBUG 2021-11-01 18:26:21,142 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:26:21,191 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:26:21,191 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:26:21,191 - Dispatching event socket_response
+INFO 2021-11-01 18:27:01,205 - 172.18.0.1 - - [01/Nov/2021 18:27:01] "HEAD / HTTP/1.1" 200 -
+DEBUG 2021-11-01 18:27:02,394 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:27:02,441 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:27:02,441 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:27:02,441 - Dispatching event socket_response
+DEBUG 2021-11-01 18:27:43,645 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:27:43,689 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:27:43,690 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:27:43,690 - Dispatching event socket_response
+DEBUG 2021-11-01 18:28:24,896 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:28:24,939 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:28:24,939 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:28:24,939 - Dispatching event socket_response
+DEBUG 2021-11-01 18:29:06,147 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:29:06,187 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:29:06,187 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:29:06,187 - Dispatching event socket_response
+DEBUG 2021-11-01 18:29:47,399 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:29:47,442 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:29:47,442 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:29:47,442 - Dispatching event socket_response
+DEBUG 2021-11-01 18:30:28,650 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:30:28,691 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:30:28,692 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:30:28,692 - Dispatching event socket_response
+DEBUG 2021-11-01 18:31:09,901 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:31:09,947 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:31:09,947 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:31:09,947 - Dispatching event socket_response
+DEBUG 2021-11-01 18:31:51,152 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:31:51,197 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:31:51,197 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:31:51,197 - Dispatching event socket_response
+INFO 2021-11-01 18:32:01,089 - 172.18.0.1 - - [01/Nov/2021 18:32:01] "HEAD / HTTP/1.1" 200 -
+DEBUG 2021-11-01 18:32:32,404 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:32:32,446 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:32:32,446 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:32:32,446 - Dispatching event socket_response
+DEBUG 2021-11-01 18:33:13,655 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:33:13,700 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:33:13,700 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:33:13,700 - Dispatching event socket_response
+DEBUG 2021-11-01 18:33:54,906 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:33:54,950 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:33:54,950 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:33:54,951 - Dispatching event socket_response
+DEBUG 2021-11-01 18:34:36,157 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:34:36,204 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:34:36,204 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:34:36,204 - Dispatching event socket_response
+DEBUG 2021-11-01 18:35:17,410 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:35:17,451 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:35:17,451 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:35:17,451 - Dispatching event socket_response
+DEBUG 2021-11-01 18:35:58,661 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:35:58,712 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:35:58,712 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:35:58,712 - Dispatching event socket_response
+DEBUG 2021-11-01 18:36:39,912 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:36:39,954 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:36:39,954 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:36:39,955 - Dispatching event socket_response
+INFO 2021-11-01 18:37:01,251 - 172.18.0.1 - - [01/Nov/2021 18:37:01] "HEAD / HTTP/1.1" 200 -
+DEBUG 2021-11-01 18:37:21,164 - Keeping shard ID None websocket alive with sequence 33.
+DEBUG 2021-11-01 18:37:21,209 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:37:21,210 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:37:21,210 - Dispatching event socket_response
+DEBUG 2021-11-01 18:37:25,711 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:37:25,711 - For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 34, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2021-11-01T18:37:25.673000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '904801321419276288', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2021-09-14T15:33:29.242000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '904801322472206336', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'https://github.com/githubteacher/github-for-developers-sept-2015/issues/648', 'components': [], 'channel_id': '887360283071373325', 'author': {'username': 'Herteg', 'public_flags': 0, 'id': '645020806702956556', 'discriminator': '3455', 'avatar': None}, 'attachments': [], 'guild_id': '887360283071373322'}}
+DEBUG 2021-11-01 18:37:25,712 - Dispatching event socket_response
+DEBUG 2021-11-01 18:37:25,712 - Dispatching event message
+DEBUG 2021-11-01 18:37:28,334 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:37:28,335 - For Shard ID None: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 35, 'op': 0, 'd': {'id': '904801322472206336', 'embeds': [{'url': 'https://github.com/githubteacher/github-for-developers-sept-2015/issues/648', 'type': 'article', 'title': 'How does one solve "This branch has conflicts that must be resolved...', 'thumbnail': {'width': 1200, 'url': 'https://opengraph.githubassets.com/33207d1314fb7fbf2f57f1829d1091e29c2e16974cf8504e9b7ada2c01a2aaac/githubteacher/github-for-developers-sept-2015/issues/648', 'proxy_url': 'https://images-ext-1.discordapp.net/external/v7hA8jtMOXp1bVJV0BSHYQf19_BAJnrbMEwezuBY8Xo/https/opengraph.githubassets.com/33207d1314fb7fbf2f57f1829d1091e29c2e16974cf8504e9b7ada2c01a2aaac/githubteacher/github-for-developers-sept-2015/issues/648', 'height': 600}, 'provider': {'name': 'GitHub'}, 'color': 1975079}], 'channel_id': '887360283071373325', 'guild_id': '887360283071373322'}}
+DEBUG 2021-11-01 18:37:28,335 - Dispatching event socket_response
+DEBUG 2021-11-01 18:37:28,335 - Dispatching event raw_message_edit
+DEBUG 2021-11-01 18:37:28,335 - Dispatching event message_edit
+DEBUG 2021-11-01 18:38:02,415 - Keeping shard ID None websocket alive with sequence 35.
+DEBUG 2021-11-01 18:38:02,460 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:38:02,460 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:38:02,460 - Dispatching event socket_response
+DEBUG 2021-11-01 18:38:43,666 - Keeping shard ID None websocket alive with sequence 35.
+DEBUG 2021-11-01 18:38:43,710 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:38:43,711 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:38:43,711 - Dispatching event socket_response
+DEBUG 2021-11-01 18:39:24,917 - Keeping shard ID None websocket alive with sequence 35.
+DEBUG 2021-11-01 18:39:24,964 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:39:24,964 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:39:24,964 - Dispatching event socket_response
+DEBUG 2021-11-01 18:40:06,170 - Keeping shard ID None websocket alive with sequence 35.
+DEBUG 2021-11-01 18:40:06,215 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:40:06,216 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:40:06,216 - Dispatching event socket_response
