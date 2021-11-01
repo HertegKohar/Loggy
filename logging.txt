@@ -226,3 +226,16 @@ DEBUG 2021-11-01 18:40:06,170 - Keeping shard ID None websocket alive with seque
 DEBUG 2021-11-01 18:40:06,215 - Dispatching event socket_raw_receive
 DEBUG 2021-11-01 18:40:06,216 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
 DEBUG 2021-11-01 18:40:06,216 - Dispatching event socket_response
+DEBUG 2021-11-01 18:40:47,421 - Keeping shard ID None websocket alive with sequence 35.
+DEBUG 2021-11-01 18:40:47,463 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:40:47,464 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:40:47,464 - Dispatching event socket_response
+DEBUG 2021-11-01 18:41:28,673 - Keeping shard ID None websocket alive with sequence 35.
+DEBUG 2021-11-01 18:41:28,721 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:41:28,722 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:41:28,722 - Dispatching event socket_response
+INFO 2021-11-01 18:42:01,293 - 172.18.0.1 - - [01/Nov/2021 18:42:01] "HEAD / HTTP/1.1" 200 -
+DEBUG 2021-11-01 18:42:09,924 - Keeping shard ID None websocket alive with sequence 35.
+DEBUG 2021-11-01 18:42:09,968 - Dispatching event socket_raw_receive
+DEBUG 2021-11-01 18:42:09,969 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+DEBUG 2021-11-01 18:42:09,969 - Dispatching event socket_response
