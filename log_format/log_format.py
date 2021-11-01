@@ -10,7 +10,7 @@ Author:
 """
 
 # Base class ice cream juice
-class base_log_format:
+class Base_log_format:
   """
   Description:
     Used to create log objects from unclassified logs. Overall formatting done in this class is basic since the logs overall format is unknown and not implemented.
@@ -99,7 +99,7 @@ class base_log_format:
 
 
 # Dispatch Event Subclass
-class dispatch_event_log(base_log_format):
+class dispatch_event_log(Base_log_format):
   """
   Description:
     Subclass of base_log_format used to create log objects from disbatch events logs
@@ -136,7 +136,7 @@ class dispatch_event_log(base_log_format):
 
 
 # Websocket Event subclass
-class websocket_event_log(base_log_format):
+class websocket_event_log(Base_log_format):
   """
   Description:
     Subclass of base_log_format used to create log objects from websocket events logs
@@ -211,7 +211,7 @@ class websocket_event_log(base_log_format):
 
 
 # POST subclass
-class POST_log(base_log_format):
+class POST_log(Base_log_format):
   """
   Description:
     Subclass of base_log_format used to create log objects from POST logs
@@ -281,7 +281,7 @@ class POST_log(base_log_format):
 
 
 # Starting new HTTP connection subclass
-class HTTP_connection_log(base_log_format):
+class HTTP_connection_log(Base_log_format):
   """
   Description:
     Subclass of base_log_format used to create log objects from HTTP Connection logs
@@ -323,7 +323,7 @@ class HTTP_connection_log(base_log_format):
 
 
 # Keeping shard ID None websocket alive subclass
-class websocket_alive_log(base_log_format):
+class websocket_alive_log(Base_log_format):
   """
   Description:
     Subclass of base_log_format used to create log objects from websocket alive logs

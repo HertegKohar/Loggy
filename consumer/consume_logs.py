@@ -19,7 +19,7 @@ def consume_logs(work: Queue, finished: Queue)->None:
       elif " - Keeping shard ID None websocket alive with sequence" in line:
         log = log_format.websocket_alive_log(line)
       else:
-        log = log_format.base_log_format(line)
+        log = log_format.Base_log_format(line)
         
       
       #Might have to adjust line so that it removes uneccesary parts
