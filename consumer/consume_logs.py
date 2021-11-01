@@ -1,18 +1,43 @@
 from queue import Queue
 from log_format import log_format
 
-
 def consume_logs(work: Queue, finished: Queue)->None:
+  print("Consuming")
   while True:
     if not work.empty():
       line = work.get()
+  
       #Classify line here
+      if "- Dispatching event" in line:
+        log = log_format.dispatch_event_log(line)
+      elif " - POST" in line:
+        log = log_format.POST_log(line)
+      elif " - For Shard ID None: WebSocket Event:" in line:
+        log = log_format.websocket_event_log(line)
+      elif " - Starting new HTTP connection" in line:
+        log = log_format.HTTP_connection_log(line)
+      elif " - Keeping shard ID None websocket alive with sequence" in line:
+        log = log_format.websocket_alive_log(line)
+      else:
+        log = log_format.base_log_format(line)
+        
+      
+      #Might have to adjust line so that it removes uneccesary parts
+      
+      log.write_to_csv()
+      log.wrtie_to_file()
+      
+
+      
     else:
       finish = finished.get()
       if finish:
         break
 
 
+
+#how to create a Dispatch Event
+#dispatch = log_format.dispatch_event_log("DEBUG "
 
 # Consumer
 # def perform_work(work: Queue, finished: Queue) -> None:
@@ -33,21 +58,5 @@ def consume_logs(work: Queue, finished: Queue)->None:
 #             if q:
 #                 break
 #             display("finished")
-
-#--------------------------------------------------------------
-
-# This is how I calassified the logs
-# Dispatch event 
-# POST
-# WebSocket event
-# HTTP connection
-# websocket alive
-
-# how to create a web socket log object - same method for all the other log types
-# websocket_log_object = log_format.websocket_alive_log("DEBUG 2021-09-17 18:16:31,681 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}")
-
-# how to write to both file options - file names are already made ;)
-# websocket_log_object.write_to_csv()
-# websocket_log_object.write_to_file()
 
 #--------------------------------------------------------------

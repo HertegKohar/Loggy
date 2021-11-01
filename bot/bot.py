@@ -14,5 +14,3 @@ class Bot(commands.Bot):
     """
         super().__init__(command_prefix=prefix)
         self.log_stream = streamer
-        self.consumer_thread = None
-        self.producer_thread = None

@@ -28,7 +28,7 @@ class base_log_format:
   def __init__(self, msg: str):
     self.msg = msg
     # call helper function to create the formatted messages
-    self.__format_msg()
+    self.format_msg()
     # creates the file names based on their class name except
     # for the base class
     if self.__class__.__name__ != "base_log_format":
@@ -38,7 +38,7 @@ class base_log_format:
   def __str__(self):
     return self.msg
 
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format and create a comma seperated version of the message.
@@ -46,6 +46,7 @@ class base_log_format:
     Return:
       None
     """
+    #print("Base Log formatting")
 
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
@@ -69,6 +70,7 @@ class base_log_format:
     Return:
       None
     """
+    #print("Writing to file")
     # open file for appending
     file = open("formatted_logs/" + self.file_name,
                 "a",
@@ -106,7 +108,7 @@ class dispatch_event_log(base_log_format):
     DEBUG 2021-09-17 18:09:19,721 - Dispatching event socket_raw_receive
     DEBUG 2021-09-17 18:09:19,722 - Dispatching event socket_response
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format and create a comma seperated version of the message.
@@ -114,6 +116,7 @@ class dispatch_event_log(base_log_format):
     Return:
       None
     """
+    #print("dispatch_event_log formatting")
 
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
@@ -142,7 +145,7 @@ class websocket_event_log(base_log_format):
     DEBUG 2021-09-17 18:16:31,681 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
     DEBUG 2021-09-17 18:09:38,843 - For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 33, 'op': 0, .....
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format and create a comma seperated version of the message.
@@ -150,6 +153,7 @@ class websocket_event_log(base_log_format):
     Return:
       None
     """
+    #print("websocket_event_log Formatting")
 
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
@@ -216,7 +220,7 @@ class POST_log(base_log_format):
     DEBUG 2021-09-17 18:10:50,049 - POST https://discord.com/api/v7/channels/887370975526653962/messages with {"content":"Current temp: 25.7\u00b0C\n .....
     DEBUG 2021-09-17 18:10:50,049 - POST https://discord.com/api/v7/channels/887370975526653962/messages has received {'id': '888487175790952478', 'type': 0, .....
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format and create a comma seperated version of the message.
@@ -225,6 +229,7 @@ class POST_log(base_log_format):
       None
     """
 
+    #print("POST_log formatting")
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
 
@@ -285,7 +290,7 @@ class HTTP_connection_log(base_log_format):
     DEBUG 2021-09-17 18:15:42,142 - Starting new HTTP connection (1): api.openweathermap.org:80
     DEBUG 2021-09-17 18:10:49,631 - Starting new HTTP connection (1): api.openweathermap.org:80
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format
@@ -294,6 +299,8 @@ class HTTP_connection_log(base_log_format):
     Return:
       None
     """
+
+    #print("HTTP_connection_log formatting")
 
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
@@ -325,7 +332,7 @@ class websocket_alive_log(base_log_format):
     DEBUG 2021-09-17 18:10:20,378 - Keeping shard ID None websocket alive with sequence 34.
     DEBUG 2021-09-17 18:11:01,629 - Keeping shard ID None websocket alive with sequence 41.
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format
@@ -334,6 +341,8 @@ class websocket_alive_log(base_log_format):
     Return:
       None
     """
+
+    #print("websocket_alive_log formatting")
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
 

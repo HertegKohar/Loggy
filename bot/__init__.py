@@ -8,23 +8,27 @@ import discord
 from logger import logger, streamer
 from threading import Thread
 from zipfile import ZipFile
+from producer import produce_logs
+from consumer import consume_logs
+from queue import Queue
 
 bot = Bot('$', streamer)
 
 
 @bot.event
 async def on_ready():
-    """Description: Event for bot when being initialized and starting up. Prints its name to the
+      """Description: Event for bot when being initialized and starting up. Prints its name to the
     consolse.
-    """
-    print(f"Booting up: {bot.user}")
+      """
+      print(f"Booting up: {bot.user}")
+
 
 
 @bot.command(name="printLog")
 async def print_log(ctx):
     """Description: Command to print logs into console on virtual machine. Called from discord when bot is active.
     Args:
-        ctx (Context): Context in which the command is being invoked
+      ctx (Context): Context in which the command is being invoked
     """
     for log in bot.log_stream.logs:
         print(log)
@@ -35,7 +39,7 @@ async def print_log(ctx):
 async def greeting(ctx):
   """Description: Command to reply to user and reply in discord chat with greeting.
   Args:
-        ctx (Context): Context in which the command is being invoked
+      ctx (Context): Context in which the command is being invoked
   """
   await ctx.send(f'Hello {ctx.author.display_name}')
 
@@ -44,7 +48,7 @@ async def greeting(ctx):
 async def enable_log(ctx):
   """Description: Command to enable logging from bot on virtual machine and store logs in a file.
   Args:
-        ctx (Context): Context in which the command is being invoked
+      ctx (Context): Context in which the command is being invoked
     """
   logging.disable(logging.NOTSET)
   await ctx.send(f"Logging enabled {datetime.now()}")
@@ -54,7 +58,7 @@ async def enable_log(ctx):
 async def disable_log(ctx):
   """Description: Command called from discord, flushes bot log stream and disables logging.
   Args:
-        ctx (Context): Context in which the command is being invoked
+      ctx (Context): Context in which the command is being invoked
     """
   bot.log_stream.refresh()
   logging.disable(logging.CRITICAL)
@@ -65,7 +69,7 @@ async def disable_log(ctx):
 async def log_files(ctx):
   """Description: Command to send formatted log files to discord chat in a zip file format.
   Args:
-        ctx (Context): Context in which the command is being invoked
+      ctx (Context): Context in which the command is being invoked
     """
   with ZipFile("formatted_logs.zip", "w") as zip:
       folder_path = "formatted_logs"
@@ -80,7 +84,7 @@ async def log_files(ctx):
 async def smile(ctx):
   """Description: Command that is called that returns the image of the bot to the discord chat
   Args:
-        ctx (Context): Context in which the command is being invoked
+      ctx (Context): Context in which the command is being invoked
     """
   await ctx.send(file=discord.File("LoggySmile.png"))
 
@@ -155,3 +159,29 @@ async def stocks(ctx, stock_ticker):
       logger.error(str(err))
       await ctx.send(
           f"Ticker {stock_ticker} unavailable or functionality not working")
+
+
+
+@bot.command(name="produce_consume")
+async def produce_consume(ctx):
+
+  await ctx.send("Producing and consuming has started...")
+  work = Queue()
+  finished = Queue()
+
+  #thread for producer
+  #currently have it set up to work with a small file with one of each log types
+  produce = Thread(target=produce_logs.produce_logs, args = (work, finished, "logging.txt"))
+
+  #thread for consumer
+  consume = Thread(target=consume_logs.consume_logs, args = (work, finished))   
+
+  #start each thread
+  produce.start()
+  consume.start()
+
+  await ctx.send("Finished")
+
+  
+  
+

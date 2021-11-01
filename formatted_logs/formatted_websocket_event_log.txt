@@ -1,0 +1,1 @@
+Type: DEBUG | Timestamp: 2021-09-17 18:09:38 | Code: 843 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: are you using discord online or discord app??

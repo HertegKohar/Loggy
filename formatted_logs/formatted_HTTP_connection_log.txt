@@ -1,0 +1,1 @@
+Type: DEBUG | Timestamp: 2021-09-17 18:15:42 | Code: 142 | Event: HTTP Connection | Website: api.openweathermap.org

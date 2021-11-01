@@ -145,6 +145,38 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "flask-autoindex"
+version = "0.6.6"
+description = "The mod_autoindex for Flask"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = ">=1.1"
+Flask-Silk = ">=0.2"
+future = ">=0.13.0"
+
+[[package]]
+name = "flask-silk"
+version = "0.2"
+description = "Adds silk icons to your Flask application or blueprint, or extension."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = ">=0.8"
+
+[[package]]
+name = "future"
+version = "0.18.2"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
 name = "idna"
 version = "2.10"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -389,7 +421,7 @@ requests = ">=2.20"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "6ecfb64c23a1a09fd4a0d3df0345ee9d938534943da05861e75acc94242610f2"
+content-hash = "4388fef8dab0a0634d579bd6bf99e3e1b3058ea565e9ddbd430b245ab6fd24e8"
 
 [metadata.files]
 aiohttp = [
@@ -474,6 +506,15 @@ discord = [
 flask = [
     {file = "Flask-2.0.1-py3-none-any.whl", hash = "sha256:a6209ca15eb63fc9385f38e452704113d679511d9574d09b2cf9183ae7d20dc9"},
     {file = "Flask-2.0.1.tar.gz", hash = "sha256:1c4c257b1892aec1398784c63791cbaa43062f1f7aeb555c4da961b20ee68f55"},
+]
+flask-autoindex = [
+    {file = "Flask-AutoIndex-0.6.6.tar.gz", hash = "sha256:ea319f7ccadf68ddf98d940002066278c779323644f9944b300066d50e2effc7"},
+]
+flask-silk = [
+    {file = "Flask-Silk-0.2.tar.gz", hash = "sha256:80a21faf09fe257443a4fbbf8cd3f6c793c567c87ff784751a1c38d2e18b5fbe"},
+]
+future = [
+    {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},

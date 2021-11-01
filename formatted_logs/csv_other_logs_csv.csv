@@ -1,0 +1,1 @@
+DEBUG,2021-09-17 18:10:49,918,http://api.openweathermap.org:80 "GET /data/2.5/weather?q=Waterloo&units=metric&appid=5ce738ffc2a2d3d25a5322eeb4e68d3d HTTP/1.1" 200 459
