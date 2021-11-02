@@ -12,7 +12,7 @@ from producer import produce_logs
 from consumer import consume_logs
 from queue import Queue
 
-LOGGER = initialize_logging()
+initialize_logging()
 bot = Bot('$')
 
 
@@ -156,7 +156,7 @@ async def stocks(ctx, stock_ticker):
       await ctx.send(
           f"{stock_ticker}: {last_quote} {ticker.info['currency']}")
   except Exception as err:
-      LOGGER.error(str(err))
+      logging.getLogger().error(str(err))
       await ctx.send(
           f"Ticker {stock_ticker} unavailable or functionality not working")
 
@@ -193,9 +193,8 @@ async def produce_consume(ctx):
   produce.join()
   consume.join()
   # clears logging.txt file contents
-  global LOGGER
-  LOGGER.handlers[0].close()
-  LOGGER =initialize_logging()
+  logging.getLogger().handlers[0].close()
+  initialize_logging()
   
   # open('logging.txt','w').close()
   print("Log file cleared")

@@ -1,7 +1,1 @@
-Type: DEBUG | Timestamp: 2021-11-01 18:13:23 | Code: 309 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Finished
-Type: DEBUG | Timestamp: 2021-11-01 18:13:58 | Code: 657 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-01 18:14:39 | Code: 908 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-01 18:15:21 | Code: 160 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-01 18:15:35 | Code: 451 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-01 18:15:36 | Code: 771 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $produce_consume
-Type: DEBUG | Timestamp: 2021-11-01 18:15:36 | Code: 924 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...
+Type: DEBUG | Timestamp: 2021-11-02 16:26:41 | Code: 344 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...

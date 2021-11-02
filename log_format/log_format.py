@@ -31,7 +31,7 @@ class Base_log_format:
     self.format_msg()
     # creates the file names based on their class name except
     # for the base class
-    if self.__class__.__name__ != "base_log_format":
+    if self.__class__.__name__ != "Base_log_format":
       self.file_name = "formatted_" + self.__class__.__name__ + ".txt"
       self.csv_file_name = "csv_" + self.__class__.__name__ + ".csv"
 
@@ -102,7 +102,7 @@ class Base_log_format:
 class dispatch_event_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from disbatch events logs
+    Subclass of Base_log_format used to create log objects from disbatch events logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:09:19,721 - Dispatching event socket_raw_receive
@@ -139,7 +139,7 @@ class dispatch_event_log(Base_log_format):
 class websocket_event_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from websocket events logs
+    Subclass of Base_log_format used to create log objects from websocket events logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:16:31,681 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
@@ -214,7 +214,7 @@ class websocket_event_log(Base_log_format):
 class POST_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from POST logs
+    Subclass of Base_log_format used to create log objects from POST logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:10:50,049 - POST https://discord.com/api/v7/channels/887370975526653962/messages with {"content":"Current temp: 25.7\u00b0C\n .....
@@ -232,7 +232,7 @@ class POST_log(Base_log_format):
     #print("POST_log formatting")
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
-
+    
     # grab just the timestamp
     timestamp = type_and_timestamp[-19:]
     # grab just the msg type
@@ -241,23 +241,32 @@ class POST_log(Base_log_format):
     code = remainder[:3]
 
     # gets the dictiionary style infomation from the string
-    _, remainder = remainder[6:].split("{", 1)
-    remainder = "{" + remainder
+    if "{" in remainder:
+      _, remainder = remainder[6:].split("{", 1)
+      remainder = "{" + remainder
 
-    # Some logs had messages after the string dictionary so split the message
-    data = remainder.split("} ", 1)
+      # Some logs had messages after the string dictionary so split the message
+      data = remainder.split("} ", 1)
 
-    # if the log had a following message the data would have a length greater than 1
-    # which would mean the split function removed the "}" at the end which is
-    # needed to create the dictionary. So the "}" is added back on if needed
-    if len(data) != 1:
-        data[0] += "}"
+      # if the log had a following message the data would have a length greater than 1
+      # which would mean the split function removed the "}" at the end which is
+      # needed to create the dictionary. So the "}" is added back on if needed
+      if len(data) > 1:
+          data[0] += "}"
+
+    else:
+      data = []
 
     # create the parts of the formatted/CSV that will be the same for each log
     self.formatted_msg = f"Type: {msg_type} | Timestamp: {timestamp} | Code: {code}"
     self.csv_msg = f"{msg_type},{timestamp},{code}"
-
-    if len(data) == 1:
+    
+    if len(data) == 0:
+      self.formatted_msg += f" | Notes: {remainder[11:]}"
+      self.csv_msg += f",{remainder[11:]}"
+      #print("1")
+    elif len(data) == 1:
+        #print("2")
         # had to use the ast package to create dictionary form string as json needs the key to be in double quotes
         info_dict = ast.literal_eval(data[0])
 
@@ -265,10 +274,11 @@ class POST_log(Base_log_format):
         # when written to log file the format is more readable
         info_dict['content'] = info_dict['content'].replace("\n", " ")
 
-        self.formatted_msg += f" | Author: {info_dict['author']['username']} Message: {info_dict['content']} | Channel ID: {info_dict['channel_id']}"
+        self.formatted_msg += f" | Author: {info_dict['author']['username']} | Message: {info_dict['content']} | Channel ID: {info_dict['channel_id']}"
         self.csv_msg += f",{info_dict['author']['username']},{info_dict['content']},{info_dict['channel_id']}"
 
     else:
+        #print("3")
         # had to use json to create dictionary from string for characters in utc-16
         info_dict = json.loads(data[0])
 
@@ -284,7 +294,7 @@ class POST_log(Base_log_format):
 class HTTP_connection_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from HTTP Connection logs
+    Subclass of Base_log_format used to create log objects from HTTP Connection logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:15:42,142 - Starting new HTTP connection (1): api.openweathermap.org:80
@@ -326,7 +336,7 @@ class HTTP_connection_log(Base_log_format):
 class websocket_alive_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from websocket alive logs
+    Subclass of Base_log_format used to create log objects from websocket alive logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:10:20,378 - Keeping shard ID None websocket alive with sequence 34.

@@ -1,4 +1,2 @@
-Type: DEBUG | Timestamp: 2021-11-01 18:13:23 | Code: 334 | Message: Finished | Notes: has returned 200
-Type: DEBUG | Timestamp: 2021-11-01 18:13:23 | Code: 334 | Author: Loggy Message: Finished | Channel ID: 887370975526653962
-Type: DEBUG | Timestamp: 2021-11-01 18:15:36 | Code: 936 | Message: Producing and consuming has started... | Notes: has returned 200
-Type: DEBUG | Timestamp: 2021-11-01 18:15:36 | Code: 937 | Author: Loggy Message: Producing and consuming has started... | Channel ID: 887370975526653962
+Type: DEBUG | Timestamp: 2021-11-02 16:26:41 | Code: 364 | Message: Producing and consuming has started... | Notes: has returned 200
+Type: DEBUG | Timestamp: 2021-11-02 16:26:41 | Code: 364 | Author: Loggy | Message: Producing and consuming has started... | Channel ID: 887370975526653962

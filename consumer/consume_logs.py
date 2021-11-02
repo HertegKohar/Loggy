@@ -6,19 +6,23 @@ def consume_logs(work: Queue, finished: Queue)->None:
   while True:
     if not work.empty():
       line = work.get()
-  
-      #Classify line here
-      if "- Dispatching event" in line:
-        log = log_format.dispatch_event_log(line)
-      elif " - POST" in line:
-        log = log_format.POST_log(line)
-      elif " - For Shard ID None: WebSocket Event:" in line:
-        log = log_format.websocket_event_log(line)
-      elif " - Starting new HTTP connection" in line:
-        log = log_format.HTTP_connection_log(line)
-      elif " - Keeping shard ID None websocket alive with sequence" in line:
-        log = log_format.websocket_alive_log(line)
-      else:
+      #print(line+'\n')
+      try:
+        #Classify line here
+        if "- Dispatching event" in line:
+          log = log_format.dispatch_event_log(line)
+        elif " - POST" in line:
+          log = log_format.POST_log(line)
+        elif " - For Shard ID None: WebSocket Event:" in line:
+          log = log_format.websocket_event_log(line)
+        elif " - Starting new HTTP connection" in line:
+          log = log_format.HTTP_connection_log(line)
+        elif " - Keeping shard ID None websocket alive with sequence" in line:
+          log = log_format.websocket_alive_log(line)
+        else:
+          log = log_format.Base_log_format(line)
+      except Exception as e:
+        print(e)
         log = log_format.Base_log_format(line)
         
       
