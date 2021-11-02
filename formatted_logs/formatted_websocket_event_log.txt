@@ -1,6 +1,1 @@
-Type: DEBUG | Timestamp: 2021-11-01 19:42:08 | Code: 008 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Logging enabled 2021-11-01 19:42:07.906402
-Type: DEBUG | Timestamp: 2021-11-01 19:42:10 | Code: 754 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: $file
-Type: DEBUG | Timestamp: 2021-11-01 19:42:10 | Code: 894 | Event Type: MESSAGE_CREATE | Author: Loggy Message: 
-Type: DEBUG | Timestamp: 2021-11-01 19:42:16 | Code: 464 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-01 19:42:19 | Code: 146 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: $produce_consume
-Type: DEBUG | Timestamp: 2021-11-01 19:42:19 | Code: 335 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...
+Type: DEBUG | Timestamp: 2021-11-02 16:26:41 | Code: 344 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...

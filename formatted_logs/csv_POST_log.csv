@@ -1,6 +1,2 @@
-DEBUG,2021-11-01 19:42:08,024,Logging enabled 2021-11-01 19:42:07.906402,has returned 200
-DEBUG,2021-11-01 19:42:08,024,Loggy,Logging enabled 2021-11-01 19:42:07.906402,887370975526653962
-DEBUG,2021-11-01 19:42:10,912,POST https://discord.com/api/v7/channels/887370975526653962/messages with <aiohttp.formdata.FormData object at 0x7f9fa64af430> has returned 200
-DEBUG,2021-11-01 19:42:10,912,Loggy,,887370975526653962
-DEBUG,2021-11-01 19:42:19,380,Producing and consuming has started...,has returned 200
-DEBUG,2021-11-01 19:42:19,380,Loggy,Producing and consuming has started...,887370975526653962
+DEBUG,2021-11-02 16:26:41,364,Producing and consuming has started...,has returned 200
+DEBUG,2021-11-02 16:26:41,364,Loggy,Producing and consuming has started...,887370975526653962
