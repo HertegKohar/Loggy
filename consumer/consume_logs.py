@@ -29,7 +29,7 @@ def consume_logs(work: Queue, finished: Queue)->None:
       #Might have to adjust line so that it removes uneccesary parts
       
       log.write_to_csv()
-      log.wrtie_to_file()
+      log.write_to_file()
       
 
       

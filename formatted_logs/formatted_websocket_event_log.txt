@@ -1,185 +1,25 @@
-Type: DEBUG | Timestamp: 2021-11-25 18:47:21 | Code: 515 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Finished
-Type: DEBUG | Timestamp: 2021-11-25 18:47:21 | Code: 975 | Event Type: TYPING_START | Author: Yelly
-Type: DEBUG | Timestamp: 2021-11-25 18:47:24 | Code: 232 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $file
-Type: DEBUG | Timestamp: 2021-11-25 18:47:24 | Code: 447 | Event Type: MESSAGE_CREATE | Author: Loggy Message: 
-Type: DEBUG | Timestamp: 2021-11-25 18:47:24 | Code: 661 | Event Type: MESSAGE_CREATE | Author: Yelly Message: okok
-Type: DEBUG | Timestamp: 2021-11-25 18:47:46 | Code: 921 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:48:28 | Code: 181 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:49:04 | Code: 595 | Event Type: TYPING_START | Author: Yelly
-Type: DEBUG | Timestamp: 2021-11-25 18:49:05 | Code: 581 | Event Type: MESSAGE_CREATE | Author: Yelly Message: Group 1
-Type: DEBUG | Timestamp: 2021-11-25 18:49:09 | Code: 431 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:49:09 | Code: 761 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 18:49:13 | Code: 543 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: ayyyeeeeeeeee
-Type: DEBUG | Timestamp: 2021-11-25 18:49:32 | Code: 584 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 18:49:38 | Code: 547 | Event Type: MESSAGE_CREATE | Author: Herteg Message: Our fourth group memeber
-Type: DEBUG | Timestamp: 2021-11-25 18:49:40 | Code: 053 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $smile
-Type: DEBUG | Timestamp: 2021-11-25 18:49:40 | Code: 312 | Event Type: MESSAGE_CREATE | Author: Loggy Message: 
-Type: DEBUG | Timestamp: 2021-11-25 18:49:45 | Code: 967 | Event Type: MESSAGE_UPDATE
-Type: DEBUG | Timestamp: 2021-11-25 18:49:46 | Code: 844 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: 😂
-Type: DEBUG | Timestamp: 2021-11-25 18:49:50 | Code: 684 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:50:31 | Code: 929 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:51:13 | Code: 183 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:51:54 | Code: 438 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:52:35 | Code: 692 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:53:16 | Code: 946 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:53:58 | Code: 199 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:54:39 | Code: 449 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:55:20 | Code: 701 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:56:01 | Code: 954 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:56:31 | Code: 675 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 18:56:39 | Code: 997 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 18:56:43 | Code: 211 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:56:46 | Code: 087 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: folksss my voice is at 92.75% lol
-Type: DEBUG | Timestamp: 2021-11-25 18:57:24 | Code: 455 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:58:05 | Code: 706 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:58:46 | Code: 959 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 18:59:28 | Code: 208 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:00:09 | Code: 462 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:00:50 | Code: 714 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:01:31 | Code: 964 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:02:13 | Code: 225 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:02:54 | Code: 470 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:03:35 | Code: 719 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:04:16 | Code: 971 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:04:58 | Code: 223 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:05:39 | Code: 479 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:06:20 | Code: 727 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:07:01 | Code: 981 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:07:43 | Code: 230 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:08:24 | Code: 486 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:09:05 | Code: 743 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:09:46 | Code: 987 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:10:28 | Code: 240 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:11:09 | Code: 488 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:11:50 | Code: 742 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:12:31 | Code: 991 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:13:13 | Code: 275 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:13:54 | Code: 504 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:14:35 | Code: 765 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:15:17 | Code: 004 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:15:58 | Code: 274 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:16:39 | Code: 503 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:17:20 | Code: 756 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:18:02 | Code: 010 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:18:43 | Code: 258 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:19:24 | Code: 509 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:20:05 | Code: 758 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:20:47 | Code: 015 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:21:28 | Code: 262 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:22:09 | Code: 523 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:22:50 | Code: 771 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:23:32 | Code: 015 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:24:13 | Code: 277 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:24:54 | Code: 520 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:25:35 | Code: 776 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:26:17 | Code: 022 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:26:58 | Code: 273 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:27:39 | Code: 532 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:28:20 | Code: 779 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:29:02 | Code: 029 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:29:43 | Code: 278 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:30:24 | Code: 529 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:31:05 | Code: 780 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:31:47 | Code: 031 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:32:28 | Code: 294 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:33:09 | Code: 537 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:33:50 | Code: 787 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:34:32 | Code: 038 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:35:13 | Code: 293 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:35:54 | Code: 545 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:36:35 | Code: 793 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:37:17 | Code: 046 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:37:58 | Code: 296 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:38:39 | Code: 547 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:39:20 | Code: 797 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:40:02 | Code: 067 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:40:43 | Code: 306 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:41:24 | Code: 552 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:42:05 | Code: 811 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:42:47 | Code: 055 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:43:28 | Code: 308 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:44:09 | Code: 560 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:44:50 | Code: 814 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:45:32 | Code: 064 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:46:13 | Code: 317 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:46:54 | Code: 569 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:47:35 | Code: 818 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:48:17 | Code: 072 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:48:58 | Code: 322 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:49:39 | Code: 573 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:50:20 | Code: 827 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:51:02 | Code: 087 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:51:43 | Code: 333 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:52:24 | Code: 582 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:53:05 | Code: 836 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:53:47 | Code: 087 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:54:28 | Code: 341 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:55:09 | Code: 591 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:55:50 | Code: 844 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:56:32 | Code: 093 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:57:12 | Code: 074 | Event Type: MESSAGE_CREATE | Author: Herteg Message: 😅
-Type: DEBUG | Timestamp: 2021-11-25 19:57:13 | Code: 344 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:57:54 | Code: 595 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:58:35 | Code: 848 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:59:17 | Code: 098 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 19:59:58 | Code: 361 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:00:39 | Code: 599 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:01:20 | Code: 852 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:02:02 | Code: 106 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:02:43 | Code: 357 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:03:24 | Code: 610 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:04:05 | Code: 860 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:04:47 | Code: 118 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:05:28 | Code: 364 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:06:09 | Code: 617 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:06:50 | Code: 865 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:07:32 | Code: 126 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:08:13 | Code: 372 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:08:54 | Code: 619 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:09:35 | Code: 873 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:10:17 | Code: 124 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:10:58 | Code: 374 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:11:39 | Code: 625 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:12:20 | Code: 876 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:13:02 | Code: 130 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:13:43 | Code: 378 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:14:24 | Code: 632 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:14:54 | Code: 487 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:15:03 | Code: 203 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:15:05 | Code: 701 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: do we still wanna record or wing it/ be semi prepared??
-Type: DEBUG | Timestamp: 2021-11-25 20:15:05 | Code: 893 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:15:27 | Code: 450 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:15:30 | Code: 840 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:15:35 | Code: 633 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:15:39 | Code: 471 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:15:40 | Code: 806 | Event Type: MESSAGE_CREATE | Author: Herteg Message: Whatever day we meet up to finish the report we can just record then
-Type: DEBUG | Timestamp: 2021-11-25 20:15:47 | Code: 136 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:15:51 | Code: 281 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:15:55 | Code: 795 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:15:58 | Code: 285 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: I think i have completed a decent amount of the design doc lol
-Type: DEBUG | Timestamp: 2021-11-25 20:16:00 | Code: 624 | Event Type: MESSAGE_CREATE | Author: Herteg Message: So what day is everybody free? 🤣
-Type: DEBUG | Timestamp: 2021-11-25 20:16:03 | Code: 788 | Event Type: MESSAGE_CREATE | Author: Herteg Message: Yeah you have
-Type: DEBUG | Timestamp: 2021-11-25 20:16:05 | Code: 911 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:16:13 | Code: 309 | Event Type: MESSAGE_CREATE | Author: Herteg Message: I got to do some stuff
-Type: DEBUG | Timestamp: 2021-11-25 20:16:21 | Code: 997 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:16:25 | Code: 623 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:16:28 | Code: 390 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:16:28 | Code: 612 | Event Type: MESSAGE_CREATE | Author: Herteg Message: I guess we have to go over the report 🤔
-Type: DEBUG | Timestamp: 2021-11-25 20:16:32 | Code: 094 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:16:34 | Code: 218 | Event Type: MESSAGE_CREATE | Author: Herteg Message: I'll do my stuff today
-Type: DEBUG | Timestamp: 2021-11-25 20:16:38 | Code: 499 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:16:46 | Code: 641 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:16:52 | Code: 853 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: yeah bc then we can just play the recording that day then answer any questions
-Type: DEBUG | Timestamp: 2021-11-25 20:16:57 | Code: 489 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:17:01 | Code: 621 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: what do you mean by go over???
-Type: DEBUG | Timestamp: 2021-11-25 20:17:06 | Code: 137 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:17:09 | Code: 641 | Event Type: miscellaneous
-Type: DEBUG | Timestamp: 2021-11-25 20:17:09 | Code: 725 | Event Type: MESSAGE_CREATE | Author: Herteg Message: Like grammar and stuff
-Type: DEBUG | Timestamp: 2021-11-25 20:17:15 | Code: 355 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:17:16 | Code: 342 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: ahhhh for sure lol
-Type: DEBUG | Timestamp: 2021-11-25 20:17:26 | Code: 380 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:17:30 | Code: 431 | Event Type: TYPING_START | Author: Parker🍁
-Type: DEBUG | Timestamp: 2021-11-25 20:17:31 | Code: 377 | Event Type: MESSAGE_CREATE | Author: Herteg Message: So the day we go over it we just record and we good
-Type: DEBUG | Timestamp: 2021-11-25 20:17:33 | Code: 662 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: especially my stuff lol
-Type: DEBUG | Timestamp: 2021-11-25 20:17:41 | Code: 575 | Event Type: TYPING_START | Author: Herteg
-Type: DEBUG | Timestamp: 2021-11-25 20:17:48 | Code: 303 | Event Type: TYPING_START | Author: Parker🍁
+Type: DEBUG | Timestamp: 2021-11-26 01:28:39 | Code: 097 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Logging enabled 2021-11-26 01:28:39.007538
+Type: DEBUG | Timestamp: 2021-11-26 01:28:41 | Code: 967 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $hello
+Type: DEBUG | Timestamp: 2021-11-26 01:28:42 | Code: 072 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Hello Herteg
+Type: DEBUG | Timestamp: 2021-11-26 01:28:44 | Code: 525 | Event Type: TYPING_START | Author: Herteg
+Type: DEBUG | Timestamp: 2021-11-26 01:28:44 | Code: 716 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $smile
+Type: DEBUG | Timestamp: 2021-11-26 01:28:44 | Code: 949 | Event Type: MESSAGE_CREATE | Author: Loggy Message: 
+Type: DEBUG | Timestamp: 2021-11-26 01:28:46 | Code: 107 | Event Type: TYPING_START | Author: Parker🍁
+Type: DEBUG | Timestamp: 2021-11-26 01:28:47 | Code: 473 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: errros baby'
+Type: DEBUG | Timestamp: 2021-11-26 01:28:47 | Code: 689 | Event Type: MESSAGE_CREATE | Author: Herteg Message: hfisdfjsd
+Type: DEBUG | Timestamp: 2021-11-26 01:28:48 | Code: 598 | Event Type: MESSAGE_CREATE | Author: Herteg Message: fsdjfsd
+Type: DEBUG | Timestamp: 2021-11-26 01:28:49 | Code: 745 | Event Type: MESSAGE_CREATE | Author: Herteg Message: sdjklsd
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 107 | Event Type: MESSAGE_CREATE | Author: Yelly Message: a
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 144 | Event Type: TYPING_START | Author: Herteg
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 232 | Event Type: TYPING_START | Author: Parker🍁
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 564 | Event Type: MESSAGE_CREATE | Author: Yelly Message: b
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 687 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: asdfasdfasdfasdfasdfasdfads
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 809 | Event Type: MESSAGE_CREATE | Author: Yelly Message: c
+Type: DEBUG | Timestamp: 2021-11-26 01:28:54 | Code: 228 | Event Type: MESSAGE_CREATE | Author: Yelly Message: d
+Type: DEBUG | Timestamp: 2021-11-26 01:28:54 | Code: 506 | Event Type: MESSAGE_CREATE | Author: Yelly Message: e
+Type: DEBUG | Timestamp: 2021-11-26 01:28:54 | Code: 735 | Event Type: MESSAGE_CREATE | Author: Yelly Message: f
+Type: DEBUG | Timestamp: 2021-11-26 01:28:55 | Code: 031 | Event Type: MESSAGE_CREATE | Author: Yelly Message: g
+Type: DEBUG | Timestamp: 2021-11-26 01:28:55 | Code: 269 | Event Type: MESSAGE_CREATE | Author: Yelly Message: h
+Type: DEBUG | Timestamp: 2021-11-26 01:28:56 | Code: 049 | Event Type: MESSAGE_CREATE | Author: Yelly Message: i
+Type: DEBUG | Timestamp: 2021-11-26 01:28:56 | Code: 050 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $produce_consume
+Type: DEBUG | Timestamp: 2021-11-26 01:28:56 | Code: 128 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...

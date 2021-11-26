@@ -1,6 +1,8 @@
-Type: DEBUG | Timestamp: 2021-11-25 18:47:21 | Code: 531 | Message: Finished | Notes: has returned 200
-Type: DEBUG | Timestamp: 2021-11-25 18:47:21 | Code: 531 | Author: Loggy | Message: Finished | Channel ID: 887360283071373325
-Type: DEBUG | Timestamp: 2021-11-25 18:47:24 | Code: 482 | Notes: https://discord.com/api/v7/channels/887360283071373325/messages with <aiohttp.formdata.FormData object at 0x7f8e15886280> has returned 200
-Type: DEBUG | Timestamp: 2021-11-25 18:47:24 | Code: 482 | Author: Loggy | Message:  | Channel ID: 887360283071373325
-Type: DEBUG | Timestamp: 2021-11-25 18:49:40 | Code: 340 | Notes: https://discord.com/api/v7/channels/887360283071373325/messages with <aiohttp.formdata.FormData object at 0x7f8e15886700> has returned 200
-Type: DEBUG | Timestamp: 2021-11-25 18:49:40 | Code: 341 | Author: Loggy | Message:  | Channel ID: 887360283071373325
+Type: DEBUG | Timestamp: 2021-11-26 01:28:39 | Code: 105 | Message: Logging enabled 2021-11-26 01:28:39.007538 | Notes: has returned 200
+Type: DEBUG | Timestamp: 2021-11-26 01:28:39 | Code: 106 | Author: Loggy | Message: Logging enabled 2021-11-26 01:28:39.007538 | Channel ID: 887360283071373325
+Type: DEBUG | Timestamp: 2021-11-26 01:28:42 | Code: 105 | Message: Hello Herteg | Notes: has returned 200
+Type: DEBUG | Timestamp: 2021-11-26 01:28:42 | Code: 106 | Author: Loggy | Message: Hello Herteg | Channel ID: 887360283071373325
+Type: DEBUG | Timestamp: 2021-11-26 01:28:44 | Code: 964 | Notes: https://discord.com/api/v7/channels/887360283071373325/messages with <aiohttp.formdata.FormData object at 0x7fd78c07bd90> has returned 200
+Type: DEBUG | Timestamp: 2021-11-26 01:28:44 | Code: 964 | Author: Loggy | Message:  | Channel ID: 887360283071373325
+Type: DEBUG | Timestamp: 2021-11-26 01:28:56 | Code: 149 | Message: Producing and consuming has started... | Notes: has returned 200
+Type: DEBUG | Timestamp: 2021-11-26 01:28:56 | Code: 149 | Author: Loggy | Message: Producing and consuming has started... | Channel ID: 887360283071373325
