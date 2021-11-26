@@ -5,4 +5,5 @@ def produce_logs(work: Queue, finished: Queue,filename:str)->None:
     finished.put(False)
     for line in file:
       work.put(line.strip())
+      print(f"Producing: {line}")
     finished.put(True)

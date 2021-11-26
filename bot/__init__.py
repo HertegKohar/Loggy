@@ -139,29 +139,6 @@ async def on_message(ctx):
     """
     await ctx.send(get_weather())
 
-
-@bot.command(name="stock")
-async def stocks(ctx, stock_ticker):
-  """Description: Finds the up to date valuation of a stock from its ticker using the yahoo finance API.
-    
-    Args:
-        ctx (Context): Context in which the command is being invoked
-        stock_ticker (str): The stock_ticker to find the value of 
-    """
-  stock_ticker = stock_ticker.upper()
-  try:
-      ticker = yf.Ticker(stock_ticker)
-      data = ticker.history()
-      last_quote = (data.tail(1)['Close'].iloc[0])
-      await ctx.send(
-          f"{stock_ticker}: {last_quote} {ticker.info['currency']}")
-  except Exception as err:
-      logging.getLogger().error(str(err))
-      await ctx.send(
-          f"Ticker {stock_ticker} unavailable or functionality not working")
-
-
-
 @bot.command(name="produce_consume")
 async def produce_consume(ctx):
   """Description: Starts the producer-consumer architecture with the logs
@@ -171,6 +148,7 @@ async def produce_consume(ctx):
     """
 
   await ctx.send("Producing and consuming has started...")
+
   #Clearing old formatted log files
   for file in os.listdir("formatted_logs"):
     open("formatted_logs/"+file,'w').close()
@@ -196,7 +174,6 @@ async def produce_consume(ctx):
   logging.getLogger().handlers[0].close()
   initialize_logging()
   
-  # open('logging.txt','w').close()
   print("Log file cleared")
 
   logging.disable(logging.NOTSET)

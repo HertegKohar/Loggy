@@ -36,7 +36,11 @@ class Base_log_format:
       self.csv_file_name = "csv_" + self.__class__.__name__ + ".csv"
 
   def __str__(self):
-    return self.msg
+    """
+    Return:
+      Formatted log as a string
+    """
+    return self.formatted_msg
 
   def format_msg(self) -> None:
     """
