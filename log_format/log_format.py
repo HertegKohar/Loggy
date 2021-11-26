@@ -10,7 +10,7 @@ Author:
 """
 
 # Base class ice cream juice
-class base_log_format:
+class Base_log_format:
   """
   Description:
     Used to create log objects from unclassified logs. Overall formatting done in this class is basic since the logs overall format is unknown and not implemented.
@@ -28,17 +28,21 @@ class base_log_format:
   def __init__(self, msg: str):
     self.msg = msg
     # call helper function to create the formatted messages
-    self.__format_msg()
+    self.format_msg()
     # creates the file names based on their class name except
     # for the base class
-    if self.__class__.__name__ != "base_log_format":
+    if self.__class__.__name__ != "Base_log_format":
       self.file_name = "formatted_" + self.__class__.__name__ + ".txt"
       self.csv_file_name = "csv_" + self.__class__.__name__ + ".csv"
 
   def __str__(self):
-    return self.msg
+    """
+    Return:
+      Formatted log as a string
+    """
+    return self.formatted_msg
 
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format and create a comma seperated version of the message.
@@ -46,6 +50,7 @@ class base_log_format:
     Return:
       None
     """
+    #print("Base Log formatting")
 
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
@@ -61,7 +66,7 @@ class base_log_format:
     self.formatted_msg = f"Type: {msg_type} | Timestamp: {timestamp} | Code: {code} | Notes: {info}"
     self.csv_msg = f"{msg_type},{timestamp},{code},{info}"
 
-  def wrtie_to_file(self) -> None:
+  def write_to_file(self) -> None:
     """
     Description:
       Function to write the formatted message of the log object to the correct file
@@ -69,6 +74,7 @@ class base_log_format:
     Return:
       None
     """
+    #print("Writing to file")
     # open file for appending
     file = open("formatted_logs/" + self.file_name,
                 "a",
@@ -97,16 +103,16 @@ class base_log_format:
 
 
 # Dispatch Event Subclass
-class dispatch_event_log(base_log_format):
+class dispatch_event_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from disbatch events logs
+    Subclass of Base_log_format used to create log objects from disbatch events logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:09:19,721 - Dispatching event socket_raw_receive
     DEBUG 2021-09-17 18:09:19,722 - Dispatching event socket_response
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format and create a comma seperated version of the message.
@@ -114,6 +120,7 @@ class dispatch_event_log(base_log_format):
     Return:
       None
     """
+    #print("dispatch_event_log formatting")
 
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
@@ -133,16 +140,16 @@ class dispatch_event_log(base_log_format):
 
 
 # Websocket Event subclass
-class websocket_event_log(base_log_format):
+class websocket_event_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from websocket events logs
+    Subclass of Base_log_format used to create log objects from websocket events logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:16:31,681 - For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
     DEBUG 2021-09-17 18:09:38,843 - For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 33, 'op': 0, .....
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format and create a comma seperated version of the message.
@@ -150,6 +157,7 @@ class websocket_event_log(base_log_format):
     Return:
       None
     """
+    #print("websocket_event_log Formatting")
 
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
@@ -207,16 +215,16 @@ class websocket_event_log(base_log_format):
 
 
 # POST subclass
-class POST_log(base_log_format):
+class POST_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from POST logs
+    Subclass of Base_log_format used to create log objects from POST logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:10:50,049 - POST https://discord.com/api/v7/channels/887370975526653962/messages with {"content":"Current temp: 25.7\u00b0C\n .....
     DEBUG 2021-09-17 18:10:50,049 - POST https://discord.com/api/v7/channels/887370975526653962/messages has received {'id': '888487175790952478', 'type': 0, .....
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format and create a comma seperated version of the message.
@@ -225,9 +233,10 @@ class POST_log(base_log_format):
       None
     """
 
+    #print("POST_log formatting")
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
-
+    
     # grab just the timestamp
     timestamp = type_and_timestamp[-19:]
     # grab just the msg type
@@ -236,23 +245,32 @@ class POST_log(base_log_format):
     code = remainder[:3]
 
     # gets the dictiionary style infomation from the string
-    _, remainder = remainder[6:].split("{", 1)
-    remainder = "{" + remainder
+    if "{" in remainder:
+      _, remainder = remainder[6:].split("{", 1)
+      remainder = "{" + remainder
 
-    # Some logs had messages after the string dictionary so split the message
-    data = remainder.split("} ", 1)
+      # Some logs had messages after the string dictionary so split the message
+      data = remainder.split("} ", 1)
 
-    # if the log had a following message the data would have a length greater than 1
-    # which would mean the split function removed the "}" at the end which is
-    # needed to create the dictionary. So the "}" is added back on if needed
-    if len(data) != 1:
-        data[0] += "}"
+      # if the log had a following message the data would have a length greater than 1
+      # which would mean the split function removed the "}" at the end which is
+      # needed to create the dictionary. So the "}" is added back on if needed
+      if len(data) > 1:
+          data[0] += "}"
+
+    else:
+      data = []
 
     # create the parts of the formatted/CSV that will be the same for each log
     self.formatted_msg = f"Type: {msg_type} | Timestamp: {timestamp} | Code: {code}"
     self.csv_msg = f"{msg_type},{timestamp},{code}"
-
-    if len(data) == 1:
+    
+    if len(data) == 0:
+      self.formatted_msg += f" | Notes: {remainder[11:]}"
+      self.csv_msg += f",{remainder[11:]}"
+      #print("1")
+    elif len(data) == 1:
+        #print("2")
         # had to use the ast package to create dictionary form string as json needs the key to be in double quotes
         info_dict = ast.literal_eval(data[0])
 
@@ -260,10 +278,11 @@ class POST_log(base_log_format):
         # when written to log file the format is more readable
         info_dict['content'] = info_dict['content'].replace("\n", " ")
 
-        self.formatted_msg += f" | Author: {info_dict['author']['username']} Message: {info_dict['content']} | Channel ID: {info_dict['channel_id']}"
+        self.formatted_msg += f" | Author: {info_dict['author']['username']} | Message: {info_dict['content']} | Channel ID: {info_dict['channel_id']}"
         self.csv_msg += f",{info_dict['author']['username']},{info_dict['content']},{info_dict['channel_id']}"
 
     else:
+        #print("3")
         # had to use json to create dictionary from string for characters in utc-16
         info_dict = json.loads(data[0])
 
@@ -276,16 +295,16 @@ class POST_log(base_log_format):
 
 
 # Starting new HTTP connection subclass
-class HTTP_connection_log(base_log_format):
+class HTTP_connection_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from HTTP Connection logs
+    Subclass of Base_log_format used to create log objects from HTTP Connection logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:15:42,142 - Starting new HTTP connection (1): api.openweathermap.org:80
     DEBUG 2021-09-17 18:10:49,631 - Starting new HTTP connection (1): api.openweathermap.org:80
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format
@@ -294,6 +313,8 @@ class HTTP_connection_log(base_log_format):
     Return:
       None
     """
+
+    #print("HTTP_connection_log formatting")
 
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
@@ -316,16 +337,16 @@ class HTTP_connection_log(base_log_format):
 
 
 # Keeping shard ID None websocket alive subclass
-class websocket_alive_log(base_log_format):
+class websocket_alive_log(Base_log_format):
   """
   Description:
-    Subclass of base_log_format used to create log objects from websocket alive logs
+    Subclass of Base_log_format used to create log objects from websocket alive logs
 
   Log type Example(s):
     DEBUG 2021-09-17 18:10:20,378 - Keeping shard ID None websocket alive with sequence 34.
     DEBUG 2021-09-17 18:11:01,629 - Keeping shard ID None websocket alive with sequence 41.
   """
-  def __format_msg(self) -> None:
+  def format_msg(self) -> None:
     """
     Description:
       Private Helper Method to convert the inital message into a more readable format
@@ -334,6 +355,8 @@ class websocket_alive_log(base_log_format):
     Return:
       None
     """
+
+    #print("websocket_alive_log formatting")
     # splits data into the time stamp and remainder portion of the log
     type_and_timestamp, remainder = self.msg.split(',', 1)
 
