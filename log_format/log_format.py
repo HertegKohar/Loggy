@@ -36,7 +36,11 @@ class Base_log_format:
       self.csv_file_name = "csv_" + self.__class__.__name__ + ".csv"
 
   def __str__(self):
-    return self.msg
+    """
+    Return:
+      Formatted log as a string
+    """
+    return self.formatted_msg
 
   def format_msg(self) -> None:
     """
@@ -62,7 +66,7 @@ class Base_log_format:
     self.formatted_msg = f"Type: {msg_type} | Timestamp: {timestamp} | Code: {code} | Notes: {info}"
     self.csv_msg = f"{msg_type},{timestamp},{code},{info}"
 
-  def wrtie_to_file(self) -> None:
+  def write_to_file(self) -> None:
     """
     Description:
       Function to write the formatted message of the log object to the correct file

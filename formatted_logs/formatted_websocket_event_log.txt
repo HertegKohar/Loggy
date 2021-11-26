@@ -1,1 +1,25 @@
-Type: DEBUG | Timestamp: 2021-11-02 16:26:41 | Code: 344 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...
+Type: DEBUG | Timestamp: 2021-11-26 01:28:39 | Code: 097 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Logging enabled 2021-11-26 01:28:39.007538
+Type: DEBUG | Timestamp: 2021-11-26 01:28:41 | Code: 967 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $hello
+Type: DEBUG | Timestamp: 2021-11-26 01:28:42 | Code: 072 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Hello Herteg
+Type: DEBUG | Timestamp: 2021-11-26 01:28:44 | Code: 525 | Event Type: TYPING_START | Author: Herteg
+Type: DEBUG | Timestamp: 2021-11-26 01:28:44 | Code: 716 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $smile
+Type: DEBUG | Timestamp: 2021-11-26 01:28:44 | Code: 949 | Event Type: MESSAGE_CREATE | Author: Loggy Message: 
+Type: DEBUG | Timestamp: 2021-11-26 01:28:46 | Code: 107 | Event Type: TYPING_START | Author: Parker🍁
+Type: DEBUG | Timestamp: 2021-11-26 01:28:47 | Code: 473 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: errros baby'
+Type: DEBUG | Timestamp: 2021-11-26 01:28:47 | Code: 689 | Event Type: MESSAGE_CREATE | Author: Herteg Message: hfisdfjsd
+Type: DEBUG | Timestamp: 2021-11-26 01:28:48 | Code: 598 | Event Type: MESSAGE_CREATE | Author: Herteg Message: fsdjfsd
+Type: DEBUG | Timestamp: 2021-11-26 01:28:49 | Code: 745 | Event Type: MESSAGE_CREATE | Author: Herteg Message: sdjklsd
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 107 | Event Type: MESSAGE_CREATE | Author: Yelly Message: a
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 144 | Event Type: TYPING_START | Author: Herteg
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 232 | Event Type: TYPING_START | Author: Parker🍁
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 564 | Event Type: MESSAGE_CREATE | Author: Yelly Message: b
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 687 | Event Type: MESSAGE_CREATE | Author: Parker🍁 Message: asdfasdfasdfasdfasdfasdfads
+Type: DEBUG | Timestamp: 2021-11-26 01:28:53 | Code: 809 | Event Type: MESSAGE_CREATE | Author: Yelly Message: c
+Type: DEBUG | Timestamp: 2021-11-26 01:28:54 | Code: 228 | Event Type: MESSAGE_CREATE | Author: Yelly Message: d
+Type: DEBUG | Timestamp: 2021-11-26 01:28:54 | Code: 506 | Event Type: MESSAGE_CREATE | Author: Yelly Message: e
+Type: DEBUG | Timestamp: 2021-11-26 01:28:54 | Code: 735 | Event Type: MESSAGE_CREATE | Author: Yelly Message: f
+Type: DEBUG | Timestamp: 2021-11-26 01:28:55 | Code: 031 | Event Type: MESSAGE_CREATE | Author: Yelly Message: g
+Type: DEBUG | Timestamp: 2021-11-26 01:28:55 | Code: 269 | Event Type: MESSAGE_CREATE | Author: Yelly Message: h
+Type: DEBUG | Timestamp: 2021-11-26 01:28:56 | Code: 049 | Event Type: MESSAGE_CREATE | Author: Yelly Message: i
+Type: DEBUG | Timestamp: 2021-11-26 01:28:56 | Code: 050 | Event Type: MESSAGE_CREATE | Author: Herteg Message: $produce_consume
+Type: DEBUG | Timestamp: 2021-11-26 01:28:56 | Code: 128 | Event Type: MESSAGE_CREATE | Author: Loggy Message: Producing and consuming has started...
